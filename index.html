@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sherlock Trailer</title>
+	<link href='https://fonts.googleapis.com/css?family=Oranienbaum' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Киноглушитель</title>	
+</head>
+<body>
+	<main>
+		<h1>Киноглушитель</h1>
+		<div class="canvas__wrapper">
+			<canvas id="canvas" class="canvas" height="914" width="515"></canvas>
+			<canvas id="filter" class="canvas" height="914" width="515"></canvas>
+			<audio id="soundtrack">
+				<source src="soundtrack.ogg" type="audio/ogg">
+			</audio>
+			<video id="video" class="video">
+				<source src="sherlock-trailer.mp4" type="video/mp4">
+				<track kind="subtitles" label="Russian subtitles" src="subs.vtt" srclang="ru" default/>
+			</video>
+			<div id="subtitles" class="subtitles"></div>
+			<div class="btn__wrapper">
+				<button type="button" id="button__play" class="button">Play</button>
+				<button type="button" id="button__pause" class="button">Pause</button>
+			</div>			
+		</div>		
+	</main>
+	<script src="main.js"></script>
+</body>
+</html>
